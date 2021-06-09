@@ -1,0 +1,100 @@
+html,
+body{
+    font-family: Helvetica, sans-serif;
+    padding: 50px;
+    background: #667db6;
+    background: linear-gradient(to right, #e66465, #9198e5) no-repeat;
+}
+#robot{
+    width: 300px;
+    height: 620px;
+    margin: 50px auto 0;
+    position: relative;
+    
+}
+.look{
+    background-color: #ffaabb;
+    width: inherit;
+    height: inherit;
+}
+#head{
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    top: 0;
+    left: 110px;
+}
+#torso{
+    position: absolute;
+    top: 80px;
+    left: 50px;
+    width: 0;
+    height: 0;
+    border-top: 230px solid #ffaabb;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+}
+#leftarm{
+     width:25px;
+     height: 240px;
+     position: absolute;
+     left: 30px;
+     top: 110px;
+}
+#rightarm{
+    width:25px;
+    height: 240px;
+    position: absolute;
+    top: 110px;
+    right: 30px;
+}
+.upperarm{
+    width: 25px;
+    height: 120px;
+}
+.lowerarm{
+    width: 25px;
+    height: 100px;
+    margin-top: 10px;
+}
+#leftleg{
+    width: 30px;
+    height: 340px;
+    position: absolute;
+    top: 280px;
+    left: 85px;
+}
+#rightleg{
+    width: 30px;
+    height: 340px;
+    position: absolute;
+    top: 280px;
+    right: 85px;
+}
+.thigh{
+    width: 30px;
+    height:150px
+}
+.lowerleg{
+    width: 30px;
+    height:170px;
+    margin-top: 10px;
+}
+.shoeleft,
+.shoeright{
+    width: 30px;
+    height: 10px;
+    background-color: rgba(255, 71, 148, 0.692);
+}
+#leftarm .lowerarm:hover{
+    transform: rotate(-10deg);
+}
+#rightarm .lowerarm:hover{
+    transform: rotate(10deg);
+}
+#head:hover{
+    transform: scale(1.1);
+}
+#torso:hover{
+    transform: scale(1.1);
+}
